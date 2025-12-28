@@ -82,7 +82,7 @@ jobs:
             LIMIT_SECONDS=604800
 
             if [ $DIFF_SECONDS -gt $LIMIT_SECONDS ]; then
-              echo "⚠️ 试用期已结束，请运行 'Check In' 签到续期"
+              echo "⚠️ 试用期已结束，请运行 Action 中的'Check In' 签到续期"
               echo "⚠️ Trial expired. Run 'Check In' to renew."
               gh workflow disable "$WORKFLOW_FILE"
               exit 1
